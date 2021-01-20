@@ -1,0 +1,111 @@
+
+.menuIcon{
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    width:70px;
+    position: relative;
+    bottom: 2px;
+}
+nav.sidebar-menu-collapsed {
+    width: 100px;
+}
+
+nav.sidebar-menu-expanded {
+    width: 211px;
+    z-index:1;
+}
+
+nav.sidebar {
+    position: initial;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    padding: 0;
+    background: none repeat scroll 0 0 #000000;
+    color: white;
+}
+
+nav.sidebar a#justify-icon {
+    outline: 0;
+    color: white;
+    font-size: 24px;
+    font-style: normal;
+}
+
+nav.sidebar ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav.sidebar ul li {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px !important;
+    list-style-type: none;
+}
+
+nav.sidebar ul li a.expandable {
+    outline: 0;
+    color: white;
+    text-decoration: none;
+    font-size: 8px;
+}
+
+nav.sidebar ul li a.expandable:hover {
+    color: #bbbbbb;
+}
+
+nav.sidebar ul li a.expandable span.expanded-element {
+    color: #FFF;
+    margin-left: 8px !important;
+    font-size: 10px;
+    position: relative;
+    bottom: 2px;
+}
+
+nav.sidebar ul li.active {
+    margin: 0;
+    padding: 0;
+    margin-top: 60px !important;
+    list-style-type: none;
+    background: linear-gradient(to left, rgba(255,255,255, 0.5), #0bcaff 100%);
+    width: 100%;
+
+}
+
+nav.sidebar ul li.active a.expandable {
+    color: white !important;
+}
+
+nav.sidebar ul li.active a.expandable:hover {
+    color: white !important;
+}
+.button {
+    background-color: #0bcaff;
+    border: none;
+    color: #FFFFFF;
+    border:none;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 20px;
+    outline: 0px transparent !important;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+}
+
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+

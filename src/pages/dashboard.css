@@ -1,0 +1,66 @@
+
+.layoutBody{
+    background-color: #d9f7ff;
+    height: 100%;
+}
+
+.MyDragHandleClassName{
+    background-color: white;
+    -webkit-border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.item{
+    background-color: white;
+    -webkit-border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: calc(100% * 0.80);
+    overflow-y: scroll;
+}
+.example1{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: calc(100% * 0.80);
+    overflow-y: scroll;
+}
+.MyDragHandleClassName{
+    cursor: move;
+    height: 40px;
+    line-height: 38px;
+}
+.MyDragHandleClassName h2{
+    margin-left: 5%;
+    margin-top:8px !important;
+
+}
+.react-grid-item.react-grid-placeholder {
+    background: transparent;
+    border: 2px #777 dashed;
+}
+.verticalLine {
+    border-left: thin solid lightgray;
+    height: 5vh;
+    float: left;
+}
+.icon-up:before {
+    content: "\25B2";
+}
+
+.icon-down:before {
+    content: "\25BC";
+}
