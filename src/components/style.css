@@ -41,11 +41,14 @@ div.tooltip {
     height: 50px;
     padding: 2px;
     font: 12px sans-serif;
-    background: #f0f4f8;
+    background: white;
     border: 0px;
     border-radius: 8px;
     pointer-events: none;
     opacity: .9;
+    -webkit-box-shadow: 0 0 6px 4px gray;
+    -moz-box-shadow: 0 0 6px 4px gray;
+    box-shadow: 0 0 6px 4px gray;
 }
 
 sb9:before {
@@ -55,7 +58,7 @@ sb9:before {
     position: absolute;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid #f0f4f8;
+    border-top: 10px solid white;
     border-bottom: 10px solid transparent;
     right: 45%;
     bottom: -20px;
@@ -68,7 +71,7 @@ sb9:before {
     position: absolute;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid #f0f4f8;
+    border-top: 10px solid white;
     border-bottom: 10px solid transparent;
     right: 45%;
     bottom: -18px;

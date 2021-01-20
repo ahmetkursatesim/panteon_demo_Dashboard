@@ -53,7 +53,7 @@ const  ChartContainer = () => {
         let circleOpacityOnLineHover = "0.25";
         let data=rankHistory
         let parseDate = d3.timeParse("%Y-%m-%d");
-        let timeFormat = d3.timeFormat("%B %d");
+        let timeFormat = d3.timeFormat("%d %B");
         let bisectDate = d3.bisector(function(d) { return d.date; }).left;
         data.forEach(function (d) {
             d.values.forEach(function (d) {
@@ -162,7 +162,7 @@ const  ChartContainer = () => {
                     .on("mouseover", function(m) {
                         div.transition()
                             .style("display", "");
-                        div.html(d.name + "<br/>"+timeFormat(d4.date)+":"+d4.rank)
+                        div.html("<b style='font-size:15px'>"+d.name+"</b>"+ "<br/>"+timeFormat(d4.date)+"<b style='font-size: 12px'>  "+d4.rank+"</b>")
                             .style("left", (d3.event.pageX-75) + "px")
                             .style("top", (d3.event.pageY -65) + "px");
                     })
@@ -222,9 +222,9 @@ const  ChartContainer = () => {
                     .on("touchstart", function(d) {
                         div.transition()
                             .style("display", "");
-                        div	.html(d.name + "<br/>"  + d.close)
-                            .style("left", (d3.event.pageX) + "px")
-                            .style("top", (d3.event.pageY - 28) + "px");
+                        div.html(d.name + "<br/>"+timeFormat(d4.date)+":"+d4.rank)
+                            .style("left", (d3.event.pageX-75) + "px")
+                            .style("top", (d3.event.pageY -65) + "px");
                     })
                     .on("touchend", function(d) {
                         div.transition()
