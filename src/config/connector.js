@@ -61,7 +61,7 @@ const Context = props =>{
 
             });
     }
-    function getRankHistory(){
+    async function getRankHistory(){
 
 
         fetch('dataset/topChart.json'
