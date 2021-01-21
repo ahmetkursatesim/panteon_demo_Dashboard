@@ -55,13 +55,16 @@ const  ChartContainer = () => {
         let parseDate = d3.timeParse("%Y-%m-%d");
         let timeFormat = d3.timeFormat("%d %B");
         let bisectDate = d3.bisector(function(d) { return d.date; }).left;
-        data.forEach(function (d) {
-            d.values.forEach(function (d) {
-                d.date = typeof(d.date)=="string"?parseDate(d.date):d.date;
-                d.rank = d.rank;
+        if(data.length>0){
+            data.forEach(function (d) {
+                d.values.forEach(function (d) {
+                    d.date = typeof(d.date)=="string"?parseDate(d.date):d.date;
+                    d.rank = d.rank;
 
+                });
             });
-        });
+        }
+
 
         var xScale = d3
             .scaleTime()
